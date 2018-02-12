@@ -3,7 +3,7 @@
     , "title": "Brackets NXC Helper"
     , "description": "Syntax highlighting, code hints and uploading for NXC (LEGO Mindstorms)"
     , "homepage": "https://github.com/Stenlan/brackets-nxc"
-    , "version": "0.0.1"
+    , "version": "0.0.2"
     , "author": "Sten Lankreijer <stenlankreijer@gmail.com>"
     , "license": "MIT"
     , "engines": {
