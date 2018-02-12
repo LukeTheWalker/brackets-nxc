@@ -345,7 +345,9 @@ define(function (require, exports, module) {
     function displayError(errString) {
         var dialogObj = $($.parseHTML(errorDialogHTML));
         var openedDialog = Dialogs.showModalDialogUsingTemplate(dialogObj, true);
+        var consoleOutputHolder = dialogObj.find("#console-output-holder");
         dialogObj.find("#console-output").html(errString.replace(/(?:\r\n|\r|\n)/g, "<br>"));
+        consoleOutputHolder.scrollTop(consoleOutputHolder.prop("scrollHeight"));
     }
     /*EditorManager.on("activeEditorChange", function () {
         var jsPath = EditorManager.getActiveEditor().document.file.fullPath;
